@@ -6,11 +6,54 @@ body{
     background-size: cover;
 }
 div{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.425);
     width: 70%;
     margin: auto;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: red 10px 20px 10px, purple -10px 10px 10px;
+
 }
 
 img{/* Tornando as imagens flexíveis/ responsivas*/
     max-width: 100%;
 }
+
+figcaption{
+    text-align: center;
+}
+
+h1{
+    font-family: impact, verdana, Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.767);
+    color:  #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-shadow: red 10px 10px 10px;
+}
+
+h2{
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+    border-left-style: solid;
+    border-left-width: 20px;
+    border-left-color: blue;
+    margin-left 30px;
+    padding-left: 10px;
+}
+/* Crie uma nova regra CSS para estilizar o 
+elemento h1 com as seguintes caracteristicas:
+
+- Fonte: Impact, Verdana Arial e sans-serif
+Cor de Fundo escuro com um pouco de transparencia
+cor do texto: clara
+espaçamento: interno apenas pra cima e pra baixo
+letra maiusculas
+texto alinhado no meio
+bordas arrendodadas APENAS nos cantos superiores
+Sombra no texto*/
