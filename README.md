@@ -26,11 +26,13 @@ O CSS é aplicado diretamente em cada tag HTML
 O CSS é criado usando regras (com Seletores, propriedades, valores) dentro da própria pagina que queremos formatar.
 as regras vão valer para todos os elementos/tags desta pagina.
 ### Como fazer uma regra CSS?
+```css
 Seletor {propriedade:valor;}
+
 propriedade1: valor;
 propriedade2: valor;
 propriedadeN: valor;
-
+```css
 ### Externa
 É criado um arquivo de extensão CSS dedicado ás regras de formatação. este arquivo é então "conectado" as pagínas HTML.
 ## JS
