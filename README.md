@@ -32,7 +32,7 @@ Seletor {propriedade:valor;}
 propriedade1: valor;
 propriedade2: valor;
 propriedadeN: valor;
-```css
+```
 ### Externa
 É criado um arquivo de extensão CSS dedicado ás regras de formatação. este arquivo é então "conectado" as pagínas HTML.
 ## JS
