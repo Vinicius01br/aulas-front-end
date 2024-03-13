@@ -45,6 +45,8 @@ h2{
     border-left-color: blue;
     margin-left 30px;
     padding-left: 10px;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;
 }
 /* Crie uma nova regra CSS para estilizar o 
 elemento h1 com as seguintes caracteristicas:
@@ -57,3 +59,28 @@ letra maiusculas
 texto alinhado no meio
 bordas arrendodadas APENAS nos cantos superiores
 Sombra no texto*/
+
+/* propriedades com prefixo
+-webkit-*, moz,*, -o-*
+
+propriedades relacionadas a determinados navegadores. podem
+ter problemas de compatibilidade,*/
+/* Seletor tag (vale para todos os <A> */
+a { text-decoration: none;}
+/* Seletor DESCENDENTE */
+
+/* vale para todos os <a> CONTIDO
+em nav */
+nav a {
+    color: black;
+}
+figure img{
+    transform: scale(0.9);
+    transition: 3s;
+    filter: grayscale(100%);
+}
+/* Usando a pseudo-classe :hover(ação de passar o mouse) */
+figure img:hover{
+    transform: scale(1);
+    filter: grayscale(0);
+}
