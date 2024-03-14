@@ -168,3 +168,41 @@ nav a:last-child{
     border-bottom-right-radius: 8px;
 
 }
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    
+}
+ul li {
+    color: red;
+    list-style-type: square;
+}
+
+ul li::marker{
+    content: "😍";
+    color: aqua;
+    font-size: 30px;
+}
+
+ul li:first-child{
+    font-weight: bold;
+}
+ul li:last-child{
+    font-style: italic;
+}
+
+ul li:nth-child(3){
+    color: lime;
+}
+
+/*Cores Alternadas*/
+
+ul li:nth-child(even){
+    background-color: pink;
+}
+
+ul li:nth-child(odd){
+    background-color: aquamarine;
+}
