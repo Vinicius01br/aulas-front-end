@@ -21,18 +21,27 @@
 
 		.caixa {
 			border: solid 1px;
-			width: 30%;
+			width: 30%; /* quando coloca isso ele estica as outras caixas*/
 			padding: 8%;
 		}
 
 		#exemplo-flexbox {
 			width: 80%;
-			height: 600px;
+			height: 1000px;
 			margin: auto;
 			background-color: yellow;
+			/* habilitando o Flexbox*/
 			display: flex;
+			/*Em direção padrão "row," se comporta como alinhamento horizontal.*/
+
+			/* se estiver na direção "colum," se comporta como alinhamento vertical*/
 			justify-content: space-between;
+			/*aling-itens:flex-start;-*/
+			/* align-itens: funciona de forma contraria. ou seja em modo "row" alinha
+			verticamente. Em modo "colum", alinha horizontalmente.*/
+
 			align-items: center;
+			flex-direction: column;
 		}
 	</style>
 
