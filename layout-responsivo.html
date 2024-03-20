@@ -12,18 +12,24 @@
     <style>
         /* regras de uso geral*/
 
-        *{box-sizing: border-box;}
+        * {
+            box-sizing: border-box;
+        }
+
         /* 2 Regras de uso condicional
         com (media queries)*/
 
-        @media screen and (min-width:540px){
-            .topo{
+        @media screen and (min-width:540px) {
+            .topo {
                 display: flex;
                 justify-content: space-between;
             }
-            
-            h1{width: 60%;}
-            .menu{
+
+            h1 {
+                width: 60%;
+            }
+
+            .menu {
                 width: 40%;
                 text-align: center;
                 display: flex;
@@ -32,11 +38,24 @@
             }
         }
 
-        body{
+        @media screen and (min-width:740p) {
+            .conteudo {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+             h1{
+                width: 60%;
+                display: flex;
+             }
+            }
+        }
+
+        body {
             font-family: verdana;
             background-color: lightblue;
         }
-        .container{
+
+        .container {
             background-color: white;
             padding: 5px;
             box-shadow: black 0 0 5px;
@@ -46,23 +65,55 @@
         é como resetar valores de alguns elementos/propriedades visando evitar
         inconsitências nos resultados.*/
 
-        body,h1,h2,p{
+        body,
+        h1,
+        h2,
+        p {
             margin: 0;
             padding: 0;
         }
 
-        h2,p{padding: 4px;}
-        .topo{
-            padding: 4px; background-color: hotpink;}
-        h1{ background-color: yellow;}
-        .menu{ background-color: greenyellow;}
-        .conteudo{}
-        .um, .dois, .tres {border: solid 1px black;}
-        .um {background-color: orange ;}
-        .dois{ background-color: pink;}
-        .tres{ background-color: yellow;}
-        .rodape{background-color: red;}
+        h2,
+        p {
+            padding: 4px;
+        }
 
+        .topo {
+            padding: 4px;
+            background-color: hotpink;
+        }
+
+        h1 {
+            background-color: yellow;
+        }
+
+        .menu {
+            background-color: greenyellow;
+        }
+
+        .conteudo {}
+
+        .um,
+        .dois,
+        .tres {
+            border: solid 1px black;
+        }
+
+        .um {
+            background-color: orange;
+        }
+
+        .dois {
+            background-color: pink;
+        }
+
+        .tres {
+            background-color: yellow;
+        }
+
+        .rodape {
+            background-color: red;
+        }
     </style>
     <div class="container">
         <header class="topo">
@@ -79,7 +130,7 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam et non nam itaque minima, maxime
                     voluptate hic tempore dolorem suscipit.</p>
             </article>
-            
+
             <article class="dois">
                 <h2>Dois</h2>
                 <p>
