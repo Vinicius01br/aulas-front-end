@@ -127,6 +127,44 @@
             }
         }
 
+        @media screen and (min-width:800px) {
+
+            /*Desabilitando a quebra*/
+            .conteudo {
+                flex-wrap: nowrap;
+            }
+
+            .topo {
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 40px;
+                display: flex;
+                align-items: center;
+            }
+
+            .menu a {
+                font-size: 22px;
+            }
+
+            .um,
+            .dois,
+            .tres {
+                width: 33%;
+            }
+
+            .container {
+                max-width: 1000px;
+                margin: auto;
+            }
+
+
+
+
+
+        }
+
         /* Propriedade nova usada para espaçamentos
         entre elementos flex. necessario ajustar
         largura e /ou altura do elementos em que havéra espaçamento*/
@@ -135,7 +173,6 @@
         /* Habilitando a "quebra " da linha (row).
         Ou seja, se não tiver mais espaço para encaixar lado a lado, acontecerá
         uma quebra (o elemento vai para a linha de baixo)*/
-
     </style>
     <div class="container">
         <header class="topo">
